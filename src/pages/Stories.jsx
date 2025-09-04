@@ -1,4 +1,3 @@
-// src/components/sections/Stories/StoriesDiscover.jsx
 import { motion } from 'framer-motion';
 import { Filter, Search, Clock, Heart, MessageCircle, Play, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
