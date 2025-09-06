@@ -1,28 +1,28 @@
+// src/App.js
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Stories from './pages/Stories';
-import Story from './pages/Story';
-import Share from './pages/Share';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
-import Layout from './components/layouts/Layout';
-import Home from './pages/Home';
+import AppRoutes from './routes/AppRoutes';
+import AdminRoutes from './routes/AdminRoutes';
+import UserRoutes from './routes/UserRoutes';
+import ScrollToTop from './components/common/ScrollToTop';
+// import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
   return (
-    <BrowserRouter>
+    // <AuthProvider>
+      <BrowserRouter>
+      <ScrollToTop />
         <Routes>
-          <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/stories" element={<Stories />} />
-          <Route path="/story/:id" element={<Story />} />
-          <Route path="/share" element={<Share />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-          </Route>
+          {/* Public Routes */}
+          <Route path="/*" element={<AppRoutes />} />
+          
+          {/* User Dashboard Routes (Protexcted) */}
+          <Route path="/user/*" element={<UserRoutes />} />
+          
+          {/* Admin Dashboard Routes (Protected) */}
+          <Route path="/admin/*" element={<AdminRoutes />} />
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
+    // </AuthProvider>
   );
 }
 
