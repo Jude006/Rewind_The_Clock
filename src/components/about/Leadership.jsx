@@ -7,7 +7,7 @@ const Leadership = () => {
     name: "Nicholas Orifa",
     role: "Founder & Visionary Director",
     image: "/images/ceo.jpg",
-    bio: "With over 15 years in transformative storytelling and human psychology, Alexander envisioned a platform where authentic experiences could heal, connect, and inspire global change. His journey from clinical psychology to digital storytelling forms the foundation of our mission to help people rewrite their narratives.",
+    bio: "With over 15 years in transformative storytelling and human psychology, Nicholas envisioned a platform where authentic experiences could heal, connect, and inspire global change. His journey from clinical psychology to digital storytelling forms the foundation of our mission to help people rewrite their narratives.",
     philosophy: "Every story has the power to rewind someone's clock of hope and set it forward with renewed purpose. Authenticity is the bridge between struggle and transformation.",
     expertise: [
       "Transformative Storytelling",
@@ -18,7 +18,7 @@ const Leadership = () => {
     ],
     social: {
       linkedin: "#",
-      email: "alexander@rewindtheclock.com",
+      email: "Nicholas@rewindtheclock.com",
       website: "#"
     }
   };
